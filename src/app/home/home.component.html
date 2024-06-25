@@ -1,0 +1,17 @@
+
+<!-->Card <!-->
+    <div class="row">
+        <div class="col-md-4" *ngFor="let citation of citations">
+          <div class="card mt-3 mb-3">
+            <img [src]="citation.image" class="card-img-top" alt="citation.author">
+            <div class="card-body">
+              <h5 class="card-title">{{citation.author}}</h5>
+              <p class="card-text">{{citation.citation}}</p>
+              <p class="card-text">{{citation.category}}</p>
+              <p class="card-text">{{citation.year}}</p>
+              <p class="card-text">{{citation.rating}}</p>
+              <a href="#" class="btn btn-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
